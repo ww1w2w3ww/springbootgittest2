@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: springboot-jwt
+  datasource:
+    url: jdbc:mysql://localhost:3306/work-springboot-demo1?serverTimezone=CST useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+config:
+  jwt:
+    # 加密密钥
+    secret: abcdefg1234567
+    # token有效时长
+    expire: 3600
+    # header 名称
+    header: token
+
+Login:
+  account: admin
+  username: admin
+  password: admin
+
+#  mvc:
+#    pathmatch:
+#      matching-strategy: ant_path_matcher
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
