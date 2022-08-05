@@ -17,9 +17,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 public class WorkForSpringbootApplication {
 
     public static void main(String[] args) {
-        System.out.println("123");
-        System.out.println("1234");
-        System.out.println("12356");
 /*
         DefaultListableBeanFactory beanFactory=new DefaultListableBeanFactory();
         //beanFactory.registerSingleton("user",new User());
@@ -30,7 +27,7 @@ public class WorkForSpringbootApplication {
         Admin admin=beanFactory.getBean("admin",Admin.class);
         System.out.println(admin);
 */
-        System.out.println("3232323");
+
 
         SpringApplication.run(WorkForSpringbootApplication.class, args);
     }
