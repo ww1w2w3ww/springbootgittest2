@@ -8,12 +8,14 @@ import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 
 @MapperScan(basePackages = "com.example.workforspringboot.mapper")
 @EnableWebMvc
 @SpringBootApplication(exclude={SecurityAutoConfiguration.class})
+
 public class WorkForSpringbootApplication {
 
     public static void main(String[] args) {

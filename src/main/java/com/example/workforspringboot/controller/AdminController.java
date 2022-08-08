@@ -30,6 +30,7 @@ public class AdminController extends BaseController {
     private AdminService adminService;
     @Autowired
     private AdminMapper adminMapper;
+
 //
     @GetMapping
     @ApiOperation("全查询")
@@ -137,4 +138,13 @@ public class AdminController extends BaseController {
         this.adminService.hutoolExcel();
         return true;
     }
+
+/*    @SneakyThrows
+    @ApiOperation("测试poi-tlw")
+    @GetMapping("hutoolw")
+    public boolean hutoolExcelw(){
+        this.adminService.hutoolExcel();
+        boolean hu = new ExcelReceive().hutoolExcel2();
+        return true;
+    }*/
 }

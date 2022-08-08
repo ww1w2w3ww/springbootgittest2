@@ -1,6 +1,7 @@
 package com.example.workforspringboot.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.poi.excel.ExcelReader;
 import cn.hutool.poi.excel.ExcelUtil;
 import cn.hutool.poi.excel.ExcelWriter;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -162,6 +163,14 @@ public class AdminImpl extends ServiceImpl<AdminMapper, Admin> implements AdminS
         writer.close();
         return true;
     }
+/*
+    @Override
+    public boolean hutoolExcel2() {
+        ExcelReader reader = ExcelUtil.getReader("d:/1.1国家级和省级研发机构数---核对模板(1).xlsx");
+        reader.close();
+        System.out.println(reader);
+        return true;
+    }*/
 
 
 }
