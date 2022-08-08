@@ -162,15 +162,5 @@ public class AdminImpl extends ServiceImpl<AdminMapper, Admin> implements AdminS
 // 关闭writer，释放内存
         writer.close();
         return true;
-    }
-/*
-    @Override
-    public boolean hutoolExcel2() {
-        ExcelReader reader = ExcelUtil.getReader("d:/1.1国家级和省级研发机构数---核对模板(1).xlsx");
-        reader.close();
-        System.out.println(reader);
-        return true;
-    }*/
+    }}
 
-
-}

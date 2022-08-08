@@ -7,9 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data //get、set
-
 @AllArgsConstructor  //有参构造
-
 public class Excel {
 
 }
