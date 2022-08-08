@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Data //get、set
 @ApiModel("机构数")
 @AllArgsConstructor  //有参构造
-@NoArgsConstructor  //无参构造
+
 public class Excel {
 
 }
